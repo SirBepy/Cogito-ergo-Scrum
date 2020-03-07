@@ -26,6 +26,15 @@ h4 {
   border-right: dashed #bfbfbf;
 }
 
+/* Notes */
+.p1_note {
+  background: #4dc3ff!important;
+}
+
+.p2_note {
+  background: #ff80df!important;
+}
+
 .postit {
   line-height: 1;
   text-align: center;
