@@ -6,21 +6,39 @@
     <title>Cogito Ergo Scrum</title>
     <link href="https://fonts.googleapis.com/css?family=Kalam|Mali|Reenie+Beanie&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/grid.css">
     <script src="assets/javascript/functions.js"></script>
 </head>
 <body>
-    <h1 class="main_title"> Scrum Board </h1>
-    <div class="board col-12">
-        <row>
-            <div class="tasks_section col-4">
-                <p> Tasks </p>
+    <h1 class="main_title" contenteditable="true"> Scrum Board </h1>
+    <div class="board">
+        <div class="row">
+            <div class="tasks_section col-3 section">
+                <h4> Tasks </h4>
+                <div class="postit" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="mouse_position(event)">
+                    bruh wtf
+                </div>
+                <div class="postit" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="mouse_position(event)">
+                    hello
+                </div>
+                <div class="postit" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="mouse_position(event)">
+                    make tea
+                </div>
             </div>
-            
-        </row>
-        
-        <div class="postit" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="mouse_position(event)">
-            bruh wtf
+            <div class="p1_section col-2 section">
+                <h4> PersonOne </h4>
+            </div>
+            <div class="p2_section col-2 section">
+                <h4> PersonTwo </h4>
+            </div>
+            <div class="p3_section section col-2">
+                <h4> PersonThree </h4>
+            </div>
+            <div class="p3_section col-2">
+                <h4> Done </h4>
+            </div>
         </div>
+        
     </div>
     
 </body>

@@ -23,12 +23,13 @@
 
 [class*="col-"] {
     float: left;
+    height: 100%;
 }
 
 .row {
     width: 100%;
     margin: 0 auto;
-    min-height: 80vh;
+    height: 100%;
 }
 
 .row::after {

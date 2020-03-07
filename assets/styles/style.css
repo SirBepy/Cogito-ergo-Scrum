@@ -13,8 +13,17 @@ body {
   border-style: solid;
   border-radius: 10px;
   border-color: #a6a6a6;
-  min-height: 100vh;
-  color: green;
+  height: 100vh;
+}
+
+/* titles of the sections */
+h4 {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+}
+
+.section {
+  border-right: dashed #bfbfbf;
 }
 
 .postit {
@@ -43,6 +52,3 @@ body {
   transform: matrix(-1, -0.1, 0, 1, 0, 0);
 }
 
-.default {
-    
-}
