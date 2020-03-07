@@ -3,10 +3,6 @@
 * Based on the bootstrap grid system: https://getbootstrap.com/docs/4.0/layout/grid/
 */
 
-* {
-    box-sizing: border-box;
-}
-
 .col-1  {width: 8.333333333%; }
 .col-2  {width: 16.666666666%; }
 .col-3  {width: 25%; } /* quarter */

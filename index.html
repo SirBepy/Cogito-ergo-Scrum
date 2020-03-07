@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cogito Ergo Scrum</title>
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Mali|Reenie+Beanie&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Mali|Reenie+Beanie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/grid.css">
     <script src="assets/javascript/functions.js"></script>
 </head>
+
 <body>
-    <h1 class="main_title" contenteditable="true"> Scrum Board </h1>
+    <h1 contenteditable="true"> Scrum Board </h1>
     <div class="board">
         <div class="row">
             <div class="tasks_section col-3 section">
-                <h4> Tasks </h4>
-                <div class="postit p1_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="setEvent(event)">
-                    bruh wtf
+                <h2> Tasks </h2>
+                <div class="note p1_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+                    onmousemove="setEvent(event)">
+                    <h3>Title</h3>
+                    <p>Some text...</p>
                 </div>
-                <div class="postit p2_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="setEvent(event)">
-                    hello
-                </div>
-                <div class="postit p3_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onmousemove="setEvent(event)">
-                    make tea
-                </div>
+
+
             </div>
             <div class="p1_section col-2 section">
-                <h4> PersonOne </h4>
+                <h2> PersonOne </h2>
             </div>
             <div class="p2_section col-2 section">
-                <h4> PersonTwo </h4>
+                <h2> PersonTwo </h2>
+                <div class="note p2_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+                    onmousemove="setEvent(event)">
+                    <h3>Title</h3>
+                    <p>Some text...</p>
+                </div>
             </div>
             <div class="p3_section section col-2">
-                <h4> PersonThree </h4>
+                <h2> PersonThree </h2>
+                <div class="note p3_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+                    onmousemove="setEvent(event)">
+                    <h3>Title</h3>
+                    <p>Some text...</p>
+                </div>
             </div>
             <div class="p3_section col-2">
-                <h4> Done </h4>
+                <h2> Done </h2>
             </div>
         </div>
-        
+
     </div>
-    
+
 </body>
+
 </html>
