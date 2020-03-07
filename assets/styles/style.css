@@ -22,7 +22,7 @@ body {
   text-align: center;
   width: 250px;
   height: 250px;
-  position: relative;
+  position: absolute;
   border: 1px solid #e8e8e8;
   font-size: 22px;
   border-bottom-right-radius: 60px 5px;
