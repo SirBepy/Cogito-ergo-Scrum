@@ -14,6 +14,7 @@ body {
   border-radius: 10px;
   border-color: #a6a6a6;
   min-height: 100vh;
+  color: green;
 }
 
 .postit {
