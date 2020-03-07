@@ -1,7 +1,25 @@
+body {
+  min-height: 100vh;
+  background: rgb(154,183,208);
+  background: linear-gradient(10deg, rgba(154,183,208,1) 0%, rgba(245,210,211,1) 59%, rgba(223,204,240,1) 100%);
+}
+
+.main_title {
+  text-align: center;
+  font-family: 'Kalam', cursive; 
+}
+
+.board {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #a6a6a6;
+  min-height: 100vh;
+}
+
 .postit {
   line-height: 1;
   text-align: center;
-  width: 275px;
+  width: 250px;
   height: 250px;
   position: relative;
   border: 1px solid #e8e8e8;
