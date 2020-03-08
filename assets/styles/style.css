@@ -15,7 +15,7 @@ body {
   font-family: 'Reenie Beanie', cursive;
 */
 
-h1, h2, h3 {
+h1, h2, h3, p {
   text-align: center;
   font-family: 'Kalam', cursive; 
 }
@@ -26,6 +26,11 @@ h1 {
 
 h3 {
   font-family: 'Mali', cursive;
+}
+
+p {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 1.5em;
 }
 
 
@@ -39,41 +44,4 @@ h3 {
 
 .section {
   border-right: dashed #bfbfbf;
-}
-
-
-/* Notes css */
-.note {
-  line-height: 1;
-  text-align: center;
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  border: 1px solid #e8e8e8;
-  font-size: 22px;
-  border-bottom-right-radius: 60px 5px;
-  display: inline-block;
-  background: #ffff88;
-  background: linear-gradient(135deg, #ffff88 81%,  #ffff88 82%, #ffffc6 100%); /* W3C */
-}
-
-.note:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  bottom: 20px;
-  width: 200px;
-  height: 25px;
-  box-shadow: 2px 15px 5px rgba(143, 115, 115, 0.4);
-  transform: matrix(-1, -0.1, 0, 1, 0, 0);
-}
-
-/* Notes - temporary*/
-.p1_note {
-  background: #4dc3ff;
-}
-
-.p2_note {
-  background: #ff80df;
 }
