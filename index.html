@@ -7,8 +7,10 @@
     <title>Cogito Ergo Scrum</title>
     <link href="https://fonts.googleapis.com/css?family=Kalam|Mali|Reenie+Beanie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/note.css">
     <link rel="stylesheet" href="assets/styles/grid.css">
     <script src="assets/javascript/functions.js"></script>
+    <script src="https://kit.fontawesome.com/4e687e5bf4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,9 +19,16 @@
         <div class="row">
             <div class="tasks_section col-3 section">
                 <h2> Tasks </h2>
-                <div class="note p1_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
-                    onmousemove="setEvent(event)">
-                    <h3>Title</h3>
+                <div class="note p1_note small unselectable" onmousedown="mouseDown(this, event)"
+                    onmouseup="mouseUp(this)" onmouseenter="showOption(this)" onmouseleave="hideOption(this)">
+                    <div class="optionmenu">
+                       <button class="option"> <i class="fas fa-caret-down"></i> </button>
+                       <button class="option option-done"> <i class="fas fa-check"></i> </button>
+                       <button class="option option-delete"> <i class="far fa-trash-alt"></i> </button>
+                       <button class="option option-edit"> <i class="fas fa-pen-alt"></i> </button>
+                       <button class="option option-expand"> <i class="fas fa-expand-arrows-alt"></i> </button>
+                    </div>
+                    <h3>Find room</h3>
                     <p>Some text...</p>
                 </div>
 
@@ -30,16 +39,14 @@
             </div>
             <div class="p2_section col-2 section">
                 <h2> PersonTwo </h2>
-                <div class="note p2_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
-                    onmousemove="setEvent(event)">
+                <div class="note p2_note" onmousedown="mouseDown(this, event)" onmouseup="mouseUp(this)">
                     <h3>Title</h3>
                     <p>Some text...</p>
                 </div>
             </div>
             <div class="p3_section section col-2">
                 <h2> PersonThree </h2>
-                <div class="note p3_note" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
-                    onmousemove="setEvent(event)">
+                <div class="note p3_note" onmousedown="mouseDown(this, event)" onmouseup="mouseUp(this)">
                     <h3>Title</h3>
                     <p>Some text...</p>
                 </div>
