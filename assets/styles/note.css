@@ -1,0 +1,83 @@
+/* Notes css */
+/* normal size 250*250px*/
+.note {
+  line-height: 1;
+  text-align: center;
+  min-width: 250px;
+  min-height: 250px;
+  position: absolute;
+  border: 1px solid #e8e8e8;
+  font-size: 22px;
+  border-bottom-right-radius: 60px 5px;
+  display: inline-block;
+  background: #ffff88;
+  background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffffc6 100%); /* W3C */
+}
+
+.note:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 20px;
+  width: 200px;
+  height: 25px;
+  box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.5);
+  transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.small {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.small:after {
+  width: 80px;
+  height: 10px;
+  box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.5);
+  transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.small p {
+  display: none;
+}
+
+.unselectable {
+  user-select: none;
+}
+
+.option {
+  position: absolute;
+  background: gray;
+  top: -20px;
+  right: -15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  display: none;
+  transition: 0.3s;
+}
+
+.option-edit {
+    top: 15px;
+}
+
+.option-delete {
+    top: 50px;
+}
+
+.option-done {
+    top: 85px;
+}
+
+/* Notes - temporary*/
+.p1_note {
+  background: linear-gradient(135deg, #4dc3ff 81%, #4dc3ff 82%, #8ed9ff 100%); /* W3C */
+}
+
+.p2_note {
+  background: linear-gradient(135deg, #ff80df 81%, #ff80df 82%, #ff9fe7 100%); /* W3C */
+}
