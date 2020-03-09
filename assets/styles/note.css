@@ -12,6 +12,7 @@
   display: inline-block;
   background: #ffff88;
   background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffffc6 100%); /* W3C */
+  padding-top: 1em;
 }
 
 .note:after {
@@ -28,8 +29,8 @@
 
 .small {
   min-width: 100px;
+  max-width: 150px;
   min-height: 100px;
-  max-width: 200px;
   max-height: 200px;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .small p {
-  display: none;
+  opacity: 0;
 }
 
 .unselectable {
