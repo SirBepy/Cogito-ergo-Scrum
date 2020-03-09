@@ -51,7 +51,7 @@
 
 .option {
   position: absolute;
-  background: gray;
+  background: lightgray;
   top: -20px;
   right: -15px;
   height: 30px;
@@ -60,18 +60,8 @@
   opacity: 0;
   display: none;
   transition: 0.3s;
-}
-
-.option-edit {
-    top: 15px;
-}
-
-.option-delete {
-    top: 50px;
-}
-
-.option-done {
-    top: 85px;
+  border: none;
+  outline: none;
 }
 
 /* Notes - temporary*/
