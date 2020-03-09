@@ -64,7 +64,7 @@ function hideAllOptions(event) {
         btnArr[x].style.display = "none"
         btnArr[x].style.opacity = "0"
     }
-}
+} 
 
 function moveElementY(elem, posY) {
     setTimeout(() => {
