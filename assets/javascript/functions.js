@@ -56,7 +56,7 @@ function showAllOptions(optionsBtn) {
         moveElementY(btnArr[x], posY)
         posY += 35
     }
-}
+} 
 
 function hideAllOptions(event) {
     console.log(event)
