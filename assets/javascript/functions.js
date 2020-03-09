@@ -43,6 +43,7 @@ function hideOption(elem) {
 
 function showAllOptions(optionsBtn) {
     let optionsDiv = optionsBtn.parentElement
+    document.getElementsByTagName("body")[0].setAttribute("onclick", "hideAllOptions(event)")
     optionsBtn.style.display = "none"
 
     btnArr = optionsDiv.getElementsByTagName("button")
