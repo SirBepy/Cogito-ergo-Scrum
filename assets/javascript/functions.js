@@ -1,5 +1,5 @@
 
-
+var btnArr;
 var selectedElem;
 var x;
 var y;
@@ -41,6 +41,53 @@ function hideOption(elem) {
     }, 300)
 }
 
+function showAllOptions(optionsBtn) {
+    let optionsDiv = optionsBtn.parentElement
+    optionsBtn.style.display = "none"
+
+    btnArr = optionsDiv.getElementsByTagName("button")
+    // x has to be 1 because we dont want to affect the first button
+    let posY = 0
+    for (let x = 1; x < btnArr.length; x++) {
+        btnArr[x].style.display = "block"
+        btnArr[x].style.opacity = "1"
+        btnArr[x].style.top = "-20px"
+        moveElementY(btnArr[x], posY)
+        posY += 35
+    }
+}
+
+function hideAllOptions(event) {
+    console.log(event)
+    for (let x = 1; x < btnArr.length; x++) {
+        btnArr[x].style.display = "none"
+        btnArr[x].style.opacity = "0"
+    }
+}
+
+function moveElementY(elem, posY) {
+    setTimeout(() => {
+        if (posY > 0) {
+            elem.style.top = (parseInt(elem.style.top) + 5) + "px"
+            moveElementY(elem, posY -= 5)
+        }
+    }, 20);
+}
+
 function setData() {
 
 }
+
+/**
+ .option-edit {
+    top: 15px;
+}
+
+.option-delete {
+    top: 50px;
+}
+
+.option-done {
+    top: 85px;
+}
+ */
